@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sellers Admin Page With 3 Subsection</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+  </head>
+  <body>
+      <p class="h1 text-center">Sellers Admin Page With 3 Subsection</p>
+
+      <section class="container text-center ">
+
+        <form id="my-form" onsubmit="PageAdmin(event)">
+          <div class="mb-3">
+            <label for="price" class="form-label">Selling Price: </label>
+            <input type="number" class="form-control" id="price">
+
+          </div>
+          <div class="mb-3">
+            <label for="product" class="form-label">Product Name: </label>
+            <input type="text" class="form-control" id="product" 
+              placeholder="Product name">
+          </div>
+
+          <div class="mb-3">
+            <label for="category">Choose a Category:</label>
+            <select name="select" id="category" value="select">
+                <option value="Electronic items">Electronic items</option>
+                <option value="Food items">Food items</option>
+                <option value="Gadgets items">Gadgets items</option>
+                <option value="Mobile items">Mobile items</option>
+                <option value="Dress items">Dress items</option>
+            </select>
+        </div>
+
+          <button type="submit" class="btn btn-primary">Add Product</button>
+        </form>
+        <ul id="list of users"></ul>
+      </section>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+
+</html>
